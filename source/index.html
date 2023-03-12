@@ -7,9 +7,11 @@
   <body class="page-body">
     <header class="page-header">
       <a class="page-header__logo">
-        <img src="img/logo-mobile.svg" width="33px" height="37px" alt="Магазин Cat Energy">
+        <img src="img/logo-mobile.svg" width="33" height="37" alt="Магазин Cat Energy">
       </a>
-      <h1><b>Cat</b> Energy</h1>
+      <a class="page-header__second-logo" href="#">
+        <img src="img/header-logo1.svg" alt="Cat energy" width="101" height="18">
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
@@ -34,16 +36,18 @@
       </nav>
     </header>
     <main class="page-main">
+
       <section class="preview">
         <div class="preview__wrapper">
           <header class="preview__header">
-            <h2 class="preview__description">Функциональное<br> питание для котов</h2>
+            <h1 class="preview__description">Функциональное<br> питание для котов</h2>
             <p class="preview__slogan">Занялся собой? Займись котом!</p>
-            <img class="preview__image" src="img/index-can-mobile.png" alt="Корм Cat energy pro" width="280px" height="270px">
+            <img class="preview__image" src="img/index-can-mobile.png" alt="Корм Cat energy pro" width="280" height="270">
             <button class="button" type="button">Подобрать программу</button>
           </header>
         </div>
       </section>
+
       <section class="programs">
         <div class="programs__wrapper">
           <h2 class="visually-hidden">Программы Питания</h2>
@@ -61,6 +65,7 @@
           </ul>
         </div>
       </section>
+
       <section class="description">
         <div class="description__wrapper">
           <h2 class="description__title">Как это работает</h2>
@@ -86,6 +91,66 @@
           </ul>
         </div>
       </section>
+
+      <section class="live-example">
+        <div class="live-example__wrapper">
+          <h2 class="live-example__title">Живой пример</h2>
+          <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <dl class="live-example__list">
+            <div class="live-example__item">
+              <dt class="live-example__number">5 кг</dt>
+              <dd class="live-example__description">Снижение веса</dd>
+            </div>
+            <div class="live-example__item">
+              <dt class="live-example__number">60 дней</dt>
+              <dd class="live-example__description">Затрачено времени</dd>
+            </div>
+          </dl>
+          <p class="live-example__food-costs"> затраты на питание: 15 000 руб.</p>
+          <img class="live-example__cat-image" src="img/cat-before-mobile.png" alt="Толстый кот" width="311" height="232px">
+          <img class="live-example__cat-image" src="img/cat-after-mobile.png" alt="Худой кот" width="251" height="240px">
+          <div class="live-example__toggles">
+            <button class="slider__toggle" type="button">Было</button>
+            <div class="slider__range"></div>
+            <button class="slider__toggle" type="button">Стало</button>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts">
+          <b class="contacts__title">Приглашаем
+            к сотрудничеству дилеров!</b>
+            <p class="contacts__address">ул. Большая<br>
+              Конюшенная, д. 19/8<br>
+              Санкт-Петербург</p>
+        </div>
+        <div class="page-footer__map">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003142!2d30.320858716153683!3d59.93871916905411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1678646292443!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="page-footer__social social">
+          <a class="social__logo" href="#">
+            <img src="img/header-logo1.svg" alt="Car energy" width="128" height="24">
+          </a>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://instagram.com/htmlacademy">Мы в Инстаграме</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">HTML Academy</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
