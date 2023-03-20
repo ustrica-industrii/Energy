@@ -8,11 +8,11 @@
 
 .program-selection__text {
   text-transform: uppercase;
+  margin-bottom: 39px;
 }
 
-.form__section {
-  border: none;
-  border-bottom: 1px solid @bottom_line_gray;
+.form ::placeholder {
+  color: @text_gray;
 }
 
 .form__section__title {
@@ -20,8 +20,20 @@
   line-height: 26px;
 }
 
-.form__owner-data,
-.form__comment,
-.form__extra {
+.form__section {
   border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__name,
+.form__program {
+  border-bottom: 1px solid @border_gray;
+}
+
+.form__text {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 32px;
 }

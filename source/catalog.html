@@ -5,36 +5,41 @@
     <title>Cat energy</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <header class="page-header wrapper">
-    <a class="page-header__logo">
+  <body class="page-body">
+    <header class="page-header">
+    <div class="page-header__wrapper wrapper border">
+      <a class="page-header__logo">
       <img src="img/logo-mobile.svg" width="33" height="37" alt="Магазин Cat Energy">
-    </a>
-    <a class="page-header__second-logo" href="#">
-      <img src="img/header-logo1.svg" alt="Cat energy" width="101" height="18">
-    </a>
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <nav class="main-nav page-header__nav wrapper">
+      </a>
+      <a class="page-header__second-logo" href="#">
+        <img src="img/header-logo1.svg" alt="Cat energy" width="101" height="18">
+      </a>
+      <button class="main-nav__toggle" type="button">
+        1<span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
+    <nav class="main-nav page-header__nav">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
+          <li class="site-list__item site-list__item--active border">
             <a href="index.html">
               Главная
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item border">
             <a href="#">
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item border">
             <a href="form.html">
               Подбор программы
             </a>
           </li>
         </ul>
     </nav>
-  </header>
+    </header>
 
-  <main class="page-main">
+    <main class="page-main">
 
     <section class="catalog">
         <h1 class="catalog__title wrapper border">Каталог продукции</h1>
@@ -172,16 +177,16 @@
             </dl>
             <a class="product__button button" href="#">Заказать</a>
           </li>
+          <li class="catalog__item catalog__product-all product border">
+            <p class="product__title">Показать еще 100500 товаров</p>
+            <p class="catalog__product-all__text">На самом деле вкусов гораздо больше!</p>
+            <a  class="catalog__product-all__button button" href="#">Показать все</a>
+          </li>
         </ul>
-        <div class="catalog__product-all border">
-          <a class="catalog__product-all__title" href="#">Показать еще 100500 товаров</a>
-          <p class="catalog__product-all__text">На самом деле вкусов гораздо больше!</p>
-          <a  class="catalog__product-all__button button" href="#">Показать все</a>
-        </div>
     </section>
 
     <section class="extra wrapper">
-        <h2 class="extra__title">Дополнительные товары</h2>
+        <h2 class="extra__title border">Дополнительные товары</h2>
         <ul class="extra__list">
           <li class="extra-item extra-product border">
             <p class="extra-product__title">Сахарозаменитель</p>
@@ -221,9 +226,9 @@
     <div class="gift wrapper">
       <p class="gift__title">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
     </div>
-  </main>
+    </main>
 
-  <footer class="page-footer wrapper">
+    <footer class="page-footer wrapper">
     <div class="page-footer__contacts contacts">
       <b class="contacts__title">Приглашаем
         к сотрудничеству дилеров!</b>
@@ -235,7 +240,7 @@
       <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003142!2d30.320858716153683!3d59.93871916905411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1678646292443!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="page-footer__social social border">
-      <a class="social__logo" href="#">
+      <a class="social__logo border" href="#">
         <img src="img/header-logo1.svg" alt="Car energy" width="128" height="24">
       </a>
       <ul class="social__list">
@@ -256,13 +261,13 @@
         </li>
       </ul>
     </div>
-    <div class="page-footer__copyright copyright">
+    <div class="page-footer__copyright copyright border">
       <span class="copyright__text">HTML Academy</span>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="visually-hidden"></span>
         <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
       </a>
     </div>
-</footer>
-</body>
+    </footer>
+  </body>
 </html>
