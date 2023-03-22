@@ -1,3 +1,9 @@
+.program-selection {
+  @media (min-width: @decktop-width) {
+    margin-top: 187px;
+  }
+}
+
 .program-selection__title {
   font-size: 36px;
   line-height: 36px;
@@ -36,4 +42,29 @@
   margin: 0;
   text-align: center;
   margin-bottom: 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__extra .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__extra__check {
+    width: 50%;
+  }
+}
+
+@media (min-width: @decktop-width) {
+  .form__name {
+    display: flex;
+  }
+
+  .form__owner-data .wrapper {
+    display: flex;
+  }
+
+  .form__extra__check {
+    width: 25%;
+  }
 }

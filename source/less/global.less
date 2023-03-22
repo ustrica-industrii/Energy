@@ -1,3 +1,7 @@
+.page {
+  margin: 0 auto;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -29,6 +33,14 @@ a {
 
 .wrapper {
   padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @decktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .border {

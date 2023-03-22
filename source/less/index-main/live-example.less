@@ -1,6 +1,15 @@
 .live-example {
   background-color: @gray;
   padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    background-color: @basic_white;
+  }
+
+  @media (min-width: @decktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .live-example__title {
@@ -11,6 +20,7 @@
   padding: 0;
   padding-top: 27px;
   margin-bottom: 33px;
+  grid-area: title;
 }
 
 .live-example__text {
@@ -20,11 +30,14 @@
   line-height: 18px;
   font-weight: 400;
   margin-bottom: 25px;
+  grid-area: text;
 }
 
 .live-example__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  grid-area: list;
 }
 
 .live-example__item {
@@ -38,16 +51,26 @@
 }
 
 .live-example__description {
+  margin: 0;
+  padding: 0;
   text-transform: lowercase;
 }
 
 .live-example__food-costs {
+  border: none;
   text-transform: uppercase;
-  text-align: center;
+  margin: 0 auto;
   line-height: 20px;
+  display: flex;
+  font-size: 14px;
+
+  & .live-example__number {
+    font-size: 14px;
+  }
 }
 
 .live-example__cat-image {
+  display: block;
   margin: 0 auto;
 }
 
