@@ -1,5 +1,13 @@
 .description {
   margin-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: 1px solid @bottom_line_gray;
+  }
+
+  @media (min-width: @вуслещз-width) {
+    border: none;
+  }
 }
 
 .description__title {
@@ -17,20 +25,63 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 37px 153px;
+    row-gap: 17px;
+    margin-bottom: 27px;
   }
 
   @media (min-width: @decktop-width) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
-.description__item:not(:last-child) {
-  margin-bottom: 20px;
+.description__item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 230px;
+    min-height: 280px;
+    flex-direction: column;
+    background-image: url("../../img/1.svg");
+    background-repeat: no-repeat;
+    background-position: 68%;
+
+    &:nth-child(2) {
+      background-image: url("../../img/2.svg");
+      background-position: 87%;
+    }
+
+    &:nth-child(3) {
+      background-image: url("../../img/3.svg");
+      background-size: 45%;
+      background-position: 86% 40%;
+    }
+
+    &:nth-child(4) {
+      background-image: url("../../img/4.svg");
+      background-size: 50%;
+      background-position: 87%;
+    }
+  }
+}
+
+.description__item__icon {
+  margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    margin-top: 25px;
+    margin-bottom: 31px;
+  }
 }
 
 .description__text {
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;

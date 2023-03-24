@@ -8,17 +8,15 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <div class="page-header__wrapper wrapper border">
-        <a class="page-header__logo" href="#">
-          <img src="img/header-logo1.svg" alt="Cat energy" width="101" height="18">
-        </a>
+      <a class="page-header__logo" href="index.html">
+          <img class="logo" src="img/header-logo1.svg" alt="Cat energy" width="101" height="18">
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs page-header__nav">
         <button class="main-nav__toggle" type="button">
-          1<span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Открыть меню</span>
         </button>
-      </div>
-      <nav class="main-nav page-header__nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active border">
+        <ul class="main-nav__list site-list">
+            <li class="site-list__item border">
               <a href="index.html">
                 Главная
               </a>
@@ -28,12 +26,12 @@
                 Каталог продукции
               </a>
             </li>
-            <li class="site-list__item border">
+            <li class="site-list__item site-list__item--active border">
               <a href="#">
                 Подбор программы
               </a>
             </li>
-          </ul>
+        </ul>
       </nav>
     </header>
 
