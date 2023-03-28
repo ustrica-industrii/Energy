@@ -3,12 +3,17 @@
   justify-content: space-between;
   padding: 28px 20px;
 
+  @media (min-width: @tablet-width) {
+    padding: 62px 71px 51px 71px;
+  }
+
   @media (min-width: @decktop-width) {
-    width: 570px;
-    height: 201px;
+    min-width: 570px;
+    min-height: 201px;
     position: absolute;
     top: 140px;
     left: 140px;
+    padding: 62px 89px 51px 76px;
   }
 }
 
@@ -22,6 +27,11 @@
   font-weight: 400;
   color: @footer_black;
   text-transform: uppercase;
+
+  @media (min-width: @decktop-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .contacts__address {
@@ -30,4 +40,14 @@
   font-weight: 400;
   line-height: 20px;
   color: @text_gray;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    text-align: right;
+    min-width: 159px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

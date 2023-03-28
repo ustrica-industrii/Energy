@@ -96,7 +96,7 @@
       <section class="live-example">
         <div class="wrapper">
           <h2 class="live-example__title">Живой пример</h2>
-          <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой<br class="br-desktop"> обычный корм на Cat Energy Slim. Отличный результат<br class="br-desktop"> без изнуряющих тренировок! При этом он не менял своих<br class="br-desktop"> привычек и<br> по-прежнему спит по 16 часов в день. </p>
           <dl class="live-example__list">
             <div class="live-example__item">
               <dt class="live-example__number">5 кг</dt>
@@ -106,19 +106,22 @@
               <dt class="live-example__number">60 дней</dt>
               <dd class="live-example__description">Затрачено времени</dd>
             </div>
-            <div class="live-example__item live-example__food-costs">
-              <dt class="live-example__number">Затраты на питание:</dt>
-              <dd class="live-example__description">15 000 руб.</dd>
+            <div class="live-example__food-costs">
+              <dt class="live-example__food-costs__text">Затраты на питание:</dt>
+              <dd class="live-example__food-costs__description">15 000 руб.</dd>
             </div>
           </dl>
         </div>
         <div class="live-example__slider">
-          <img class="live-example__cat-image" src="img/cat-before-mobile.png" alt="Толстый кот" width="311" height="232">
-          <img class="live-example__cat-image visually-hidden" src="img/cat-after-mobile.png" alt="Худой кот" width="251" height="240">
+          <img class="live-example__cat-image fat__cat" src="img/cat-before-mobile.png" alt="Толстый кот" width="311" height="232">
+          <img class="live-example__cat-image slim__cat visually-hidden" src="img/cat-after-mobile.png" alt="Худой кот" width="251" height="240">
           <div class="live-example__toggles slider">
-            <button class="slider__toggle" type="button">Было</button>
-            <div class="slider__range"></div>
-            <button class="slider__toggle" type="button">Стало</button>
+            <button class="slider__toggle was" type="button">Было</button>
+            <div class="slider__range">
+              <div class="slider__range__was"></div>
+              <div class="slider__range__became"></div>
+            </div>
+            <button class="slider__toggle became" type="button">Стало</button>
           </div>
         </div>
       </section>
@@ -126,11 +129,17 @@
 
     <footer class="page-footer">
         <div class="page-footer__contacts contacts index-contacts  wrapper">
-          <b class="contacts__title">Приглашаем<br>
+          <b class="contacts__title">
+            Приглашаем<br>
             к сотрудничеству<br> дилеров!</b>
-            <p class="contacts__address">ул. Большая<br>
-              Конюшенная, д. 19/8<br>
-              Санкт-Петербург</p>
+            <p class="contacts__address">
+              <span>ул. Большая<br>
+                Конюшенная, д. 19/8<br>
+              </span>
+              <span>
+                Санкт-Петербург
+              </span>
+            </p>
         </div>
         <div class="page-footer__map">
           <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003142!2d30.320858716153683!3d59.93871916905411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1678646292443!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -158,15 +167,15 @@
             </li>
           </ul>
           </div>
-          <div class="page-footer__copyright copyright border  wrapper">
-          <span class="copyright__text">HTML Academy</span>
+          <div class="page-footer__copyright copyright  wrapper">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden"></span>
+            <span class="copyright__text">HTML Academy</span>
             <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
           </a>
           </div>
         </div>
     </footer>
     <script src="js/nav.js"></script>
+    <script src="js/live-example.js"></script>
   </body>
 </html>
