@@ -2,15 +2,27 @@
   background-color: @gray;
   padding-bottom: 25px;
 
+  & .wrapper {
+    margin-bottom: 44px;
+  }
+
   @media (min-width: @tablet-width) {
     background-color: @basic_white;
     padding-bottom: 0;
+
+    & .wrapper {
+      margin-bottom: 220px;
+    }
   }
 
   @media (min-width: @decktop-width) {
     background-color: @basic_gray;
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    & .wrapper {
+      margin: 0;
+    }
   }
 }
 
@@ -28,6 +40,12 @@
     line-height: 60px;
     padding: 0;
     margin-bottom: 63px;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    top: -150px;
+    margin-bottom: -150px;
   }
 }
 
@@ -58,7 +76,11 @@
   }
 
   @media (min-width: @decktop-width) {
-    margin: 70px 0;
+    margin: 146px 0 70px 0;
+
+    & br {
+      display: none;
+    }
 
     & .br-desktop {
       display: block;
@@ -71,11 +93,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 44px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 63px;
-  }
 
   @media (min-width: @decktop-width) {
     display: grid;
@@ -98,7 +115,7 @@
 
   @media (min-width: @tablet-width) {
     width: 23%;
-    align-items: baseline;
+    align-items: center;
     margin-right: 6%;
   }
 
@@ -171,15 +188,31 @@
 
 .live-example__slider {
   @media (min-width: @tablet-width) {
-    background-color: @gray;
+    background-image: linear-gradient(to left, @gray 0%, @gray 100%);
     background-size: 100% 462px;
     background-position: bottom;
   }
 
   @media (min-width: @decktop-width) {
     background-color: inherit;
+    padding-right: 58px;
   }
 }
+
+.live-example__slider--top-wrapper {
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    top: -150px;
+    margin-bottom: -150px;
+  }
+
+  @media (min-width: @decktop-width) {
+    top: -200px;
+    margin-bottom: -200px;
+  }
+}
+
 
 .live-example__cat-image {
   display: block;
@@ -190,6 +223,10 @@
   @media (min-width: @tablet-width) {
     width: auto;
     height: 620px;
+  }
+
+  @media (min-width: @decktop-width) {
+    height: 536px;
   }
 }
 

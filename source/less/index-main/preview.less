@@ -1,9 +1,9 @@
 .preview {
   color: @basic_white;
   background-image:
-    url("../../img/index-can-mobile.png"),
+    url("./../img/index-can-mobile.png"),
     linear-gradient(to left, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%),
-    url("../../img/index-background-desktop.jpg");
+    url("./../img/index-background-desktop.jpg");
   background-repeat: no-repeat;
   background-size:
     280px 270px,
@@ -19,7 +19,7 @@
 
   @media (min-width: @tablet-width) {
     color: @basic_black;
-    background-image: url("../../img/index-can-tablet.png");
+    background-image: url("./../img/index-can-tablet.png");
     background-size: 709px 609px;
     background-position: bottom;
     text-align: left;
@@ -29,12 +29,15 @@
   }
 
   @media (min-width: @decktop-width) {
-    background-image: url("../../img/index-can.png"), linear-gradient(to left, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../img/index-background-desktop1.jpg");
-    background-size: 552px 499px, 50% 694px, 50% 694px;
-    background-position: 62% 10%, right 0%, 100% 81%;
+    position: relative;
+    top: -100px;
+    margin-bottom: -18px;
+    z-index: -1;
+    background-image: url("./../img/index-can.png"), linear-gradient(to left, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("./../img/index-background-desktop1.jpg");
+    background-size: 430px 380px, 50% 694px, 50% 694px;
+    background-position: 58% 78%, right 0%, 100% 6%;
     align-items: flex-start;
     justify-content: center;
-    margin-bottom: 82px;
     min-height: 553px;
 
     .preview__button {

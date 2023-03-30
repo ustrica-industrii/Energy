@@ -36,13 +36,12 @@
     </header>
 
     <main class="page-main">
-
-    <section class="catalog">
-        <h1 class="catalog__title wrapper border">Каталог продукции</h1>
+      <section class="catalog wrapper">
+        <h1 class="catalog__title border">Каталог продукции</h1>
         <ul class="catalog__list">
           <li class="catalog__item product border">
             <img class="product__image" src="img/catalog/chicken500.png" alt="cat energy pro вкус курица">
-            <p class="product__title">Cat energy pro 500 Г</p>
+            <p class="product__title">Cat energy<br class="mobile-br"> pro<br class="tablet-br"> 500 Г</p>
             <dl class="product__characteristic characteristic">
               <div class="characteristic__item">
                 <dt class="characteristic__description">Масса</dt>
@@ -59,9 +58,9 @@
             </dl>
             <a class="product__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog__item product border">
+          <li class="catalog__item product border wrapper">
             <img class="product__image" src="img/catalog/chichen1000.png" alt="cat energy pro вкус курица">
-            <p class="product__title">Cat energy pro 1000 Г</p>
+            <p class="product__title">Cat energy<br class="mobile-br"> pro<br class="tablet-br"> 1000 Г</p>
             <dl class="product__characteristic characteristic">
               <div class="characteristic__item">
                 <dt class="characteristic__description">Масса</dt>
@@ -78,9 +77,9 @@
             </dl>
             <a class="product__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog__item product border">
+          <li class="catalog__item product border wrapper">
             <img class="product__image" src="img/catalog/fish500.png" alt="cat energy pro вкус рыба">
-            <p class="product__title">Cat energy pro 500 Г</p>
+            <p class="product__title">Cat energy<br class="mobile-br"> pro<br class="tablet-br"> 500 Г</p>
             <dl class="product__characteristic characteristic">
               <div class="characteristic__item">
                 <dt class="characteristic__description">Масса</dt>
@@ -97,9 +96,9 @@
             </dl>
             <a class="product__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog__item product border">
+          <li class="catalog__item product border wrapper">
             <img class="product__image" src="img/catalog/fish1000.png" alt="cat energy pro вкус рыба">
-            <p class="product__title">Cat energy pro 1000 Г</p>
+            <p class="product__title">Cat energy<br class="mobile-br"> pro<br class="tablet-br"> 1000 Г</p>
             <dl class="product__characteristic characteristic">
               <div class="characteristic__item">
                 <dt class="characteristic__description">Масса</dt>
@@ -116,9 +115,9 @@
             </dl>
             <a class="product__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog__item product border">
+          <li class="catalog__item product border wrapper">
             <img class="product__image" src="img/catalog/buckwheat500.png" alt="cat energy pro вкус гречка">
-            <p class="product__title">Cat energy slim 500 Г</p>
+            <p class="product__title">Cat energy<br class="mobile-br"> slim<br class="tablet-br"> 500 Г</p>
             <dl class="product__characteristic characteristic">
               <div class="characteristic__item">
                 <dt class="characteristic__description">Масса</dt>
@@ -135,9 +134,9 @@
             </dl>
             <a class="product__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog__item product border">
+          <li class="catalog__item product border wrapper">
             <img class="product__image" src="img/catalog/buckwheat1000.png" alt="cat energy pro вкус гречка">
-            <p class="product__title">Cat energy slim 1000 Г</p>
+            <p class="product__title">Cat energy<br class="mobile-br"> slim<br class="tablet-br"> 1000 Г</p>
             <dl class="product__characteristic characteristic">
               <div class="characteristic__item">
                 <dt class="characteristic__description">Масса</dt>
@@ -154,9 +153,9 @@
             </dl>
             <a class="product__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog__item product border">
+          <li class="catalog__item product border wrapper">
             <img class="product__image" src="img/catalog/rise500.png" alt="cat energy pro вкус рис">
-            <p class="product__title">Cat energy slim 500 Г</p>
+            <p class="product__title">Cat energy<br class="mobile-br"> slim<br class="tablet-br"> 500 Г</p>
             <dl class="product__characteristic characteristic">
               <div class="characteristic__item">
                 <dt class="characteristic__description">Масса</dt>
@@ -173,15 +172,16 @@
             </dl>
             <a class="product__button button" href="#">Заказать</a>
           </li>
-          <li class="catalog__item catalog__product-all product border">
-            <p class="product__title">Показать еще 100500 товаров</p>
-            <p class="catalog__product-all__text">На самом деле вкусов гораздо больше!</p>
+          <li class="catalog__item catalog__product-all product wrapper border">
+            <img src="img/catalog/plus.svg" alt="Показать ещё товары" width="30" height="30">
+            <p class="product__title">Показать еще<br class="tablet-br"> 10500 товаров</p>
+            <p class="catalog__product-all__text">На самом деле вкусов<br class="tablet-br"> гораздо больше!</p>
             <a  class="catalog__product-all__button button" href="#">Показать все</a>
           </li>
         </ul>
-    </section>
+      </section>
 
-    <section class="extra wrapper">
+      <section class="extra wrapper">
         <h2 class="extra__title border">Дополнительные товары</h2>
         <ul class="extra__list">
           <li class="extra-item extra-product border">
@@ -220,28 +220,32 @@
         <div class="gift wrapper">
           <p class="gift__title">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
         </div>
-    </section>
-
-
+      </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__contacts contacts wrapper">
-        <b class="contacts__title">Приглашаем<br>
+        <b class="contacts__title">
+          Приглашаем<br>
           к сотрудничеству<br> дилеров!</b>
-          <p class="contacts__address">ул. Большая<br>
-            Конюшенная, д. 19/8<br>
-            Санкт-Петербург</p>
+          <p class="contacts__address">
+            <span>ул. Большая<br>
+              Конюшенная, д. 19/8<br>
+            </span>
+            <span>
+              Санкт-Петербург
+            </span>
+          </p>
       </div>
       <div class="page-footer__map">
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003142!2d30.320858716153683!3d59.93871916905411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1678646292443!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="page-footer__container">
-        <div class="page-footer__social social border  wrapper">
+        <div class="page-footer__social social wrapper">
           <a class="social__logo border" href="#">
           <img src="img/header-logo1.svg" alt="Car energy" width="128" height="24">
         </a>
-        <ul class="social__list">
+        <ul class="social__list border">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
               <img src="img/logo_vk.svg" width="22" height="12" alt="Мы в Вконтакте">
@@ -259,14 +263,15 @@
           </li>
         </ul>
         </div>
-        <div class="page-footer__copyright copyright border  wrapper">
-        <span class="copyright__text">HTML Academy</span>
+        <div class="page-footer__copyright copyright  wrapper">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden"></span>
+          <span class="copyright__text">HTML Academy</span>
           <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
         </a>
         </div>
       </div>
   </footer>
+  <script src="js/nav.js"></script>
+  <script src="js/live-example.js"></script>
   </body>
 </html>

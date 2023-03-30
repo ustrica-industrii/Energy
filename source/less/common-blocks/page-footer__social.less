@@ -4,30 +4,35 @@
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    width: 413px;
+    width: 70%;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  @media (min-width: @decktop-width) {
-    width: 670px;
   }
 }
 
 .social__logo {
-  padding: 31px;
   width: 100%;
   text-align: center;
+  padding: 39px 0 32px 0;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    text-align: left;
+  }
 }
 
 .social__list {
   width: 100%;
   min-height: 22px;
   list-style: none;
-  margin: 20px 0;
-  padding: 0;
+  padding: 20px 0;
+  margin: 0;
   display: flex;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .social__item:not(:last-child) {
