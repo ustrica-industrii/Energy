@@ -185,6 +185,19 @@
   display: flex;
   align-items: center;
 
+  &:hover img,
+  &:focus img {
+    width: 32px;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    img {
+      width: 32px;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     min-width: 161px;
     min-height: 38px;

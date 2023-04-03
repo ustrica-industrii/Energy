@@ -10,6 +10,16 @@
   text-transform: uppercase;
   padding: 0;
 
+  &:hover,
+  &:focus {
+    background-color: @button-hover;
+  }
+
+  &:active {
+    background-color: @button-hover;
+    color: @opacity-white;
+  }
+
   @media (max-width: @mobile-only-width) {
     width: 100%;
     min-height: 40px;

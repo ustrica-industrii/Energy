@@ -7,9 +7,9 @@
   background-repeat: no-repeat;
   background-size:
     280px 270px,
-    100% 302px,
-    100% 302px;
-  background-position: 50% 80%, top, top;
+    100% 312px,
+    100% 312px;
+  background-position: 50% 84%, top, top;
   min-height: 480px;
   display: flex;
   flex-direction: column;
@@ -48,6 +48,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .preview__button {
+    padding: 14px 26px;
+  }
+
   .preview__header,
   .preview__button {
     margin-left: 83px;
@@ -60,7 +64,7 @@
 
 .preview__description {
   margin: 0;
-  padding-top: 27px;
+  padding-top: 26px;
   margin-bottom: 25px;
   font-size: 36px;
   line-height: 36px;

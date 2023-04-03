@@ -45,7 +45,7 @@
     width: 25px;
     height: 2px;
     background-color: @basic_black;
-    top: 50%;
+    top: 5px;
     left: 0;
   }
 
@@ -89,6 +89,7 @@
 
 .site-list__item {
   position: relative;
+  top: 10px;
   text-transform: uppercase;
   font-size: 20px;
   line-height: 20px;
@@ -96,6 +97,15 @@
   color: @basic_black;
   text-align: center;
   padding: 22px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
