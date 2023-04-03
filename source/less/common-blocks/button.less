@@ -8,5 +8,27 @@
   background-color: @basic_green;
   color: @basic_white;
   text-transform: uppercase;
-  width: 100%;
+  padding: 0;
+
+  &:hover,
+  &:focus {
+    background-color: @button-hover;
+  }
+
+  &:active {
+    background-color: @button-hover;
+    color: @opacity-white;
+  }
+
+  @media (max-width: @mobile-only-width) {
+    width: 100%;
+    min-height: 40px;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-width: 168px;
+    min-height: 54px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

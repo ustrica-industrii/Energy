@@ -1,1 +1,11 @@
-//main
+.page {
+  min-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: @decktop-width) {
+    min-width: 1440px;
+  }
+}

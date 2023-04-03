@@ -1,14 +1,149 @@
+.main-nav {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 62%;
+  }
+
+  @media (min-width: @decktop-width) {
+    width: 40%;
+  }
+}
+
+.main-nav__toggle {
+  padding: 0;
+  position: absolute;
+  z-index: 2;
+  top: 25px;
+  right: 20px;
+  display: block;
+  width: 24px;
+  height: 16px;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: @basic_black;
+  top: 0;
+  left: 0;
+  box-shadow:
+    0 8px 0 0 @basic_black,
+    0 16px 0 0 @basic_black;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: @basic_black;
+    top: 5px;
+    left: 0;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: @mobile-only-width) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
+}
+
 .site-list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    min-width: 440px;
+    min-height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @decktop-width) {
+    min-width: 478px;
+    min-height: 40px;
+  }
 }
 
 .site-list__item {
+  position: relative;
+  top: 10px;
   text-transform: uppercase;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
   color: @basic_black;
   text-align: center;
+  padding: 22px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    border: none;
+    padding: 5px;
+
+    &--active::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      width: 80%;
+      height: 2px;
+      background-color: @basic_green;
+    }
+  }
+
+  @media (min-width: @decktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @decktop-width) {
+  .white-item a {
+    color: @basic_white;
+  }
+
+  .white-item .site-list__item--active::after {
+    background-color: @basic_white;
+  }
 }
