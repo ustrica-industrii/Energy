@@ -33,12 +33,22 @@
     min-height: 372px;
     padding-top: 77px;
     padding-left: 53px;
+    margin-bottom: 30px;
+
+    &--fat .program__item__description {
+      width: 55%;
+    }
   }
 
   @media (min-width: @decktop-width) {
     width: 570px;
     min-height: 374px;
     padding-right: 51px;
+    margin-bottom: 0;
+
+    &--fat .program__item__description {
+      width: 100%;
+    }
   }
 }
 
@@ -56,13 +66,15 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
     margin: 0;
     margin-bottom: 24px;
   }
 
   @media (min-width: @decktop-width) {
     margin-bottom: 73px;
-    margin-left: 210px;
+    margin-left: 160px;
   }
 }
 
@@ -75,22 +87,22 @@
   border-radius: 50%;
 
   @media (max-width: @mobile-only-width) {
-    left: -70px;
-    bottom: -10px;
+    left: -68px;
+    bottom: -8px;
   }
 
   @media (min-width: @tablet-width) {
     width: 200px;
     height: 200px;
-    right: 25px;
-    bottom: -170px;
+    right: 32px;
+    bottom: -179px;
   }
 
   @media (min-width: @decktop-width) {
     width: 100px;
     height: 100px;
     top: -30px;
-    left: -210px;
+    left: -160px;
   }
 }
 
@@ -104,21 +116,22 @@
   background-size: 100%;
 
   @media (max-width: @mobile-only-width) {
-    left: -63px;
-    top: -5px;
+    left: -61px;
+    top: -8px;
   }
 
   @media (min-width: @tablet-width) {
     width: 140px;
     height: 192px;
-    right: 50px;
+    bottom: -160px;
+    right: 62px;
   }
 
   @media (min-width: @decktop-width) {
     width: 70px;
     height: 97px;
     top: -35px;
-    left: -195px;
+    left: -145px;
   }
 }
 
@@ -133,22 +146,22 @@
   background-size: 100%;
 
   @media (max-width: @mobile-only-width) {
-    left: -80px;
-    top: 5px;
+    left: -77px;
+    top: 6px;
   }
 
   @media (min-width: @tablet-width) {
     width: 268px;
     height: 112px;
-    right: 0;
-    top: 50px;
+    right: -2px;
+    top: 58px;
   }
 
   @media (min-width: @decktop-width) {
     width: 134px;
     height: 56px;
     top: -10px;
-    left: -225px;
+    left: -180px;
   }
 }
 
@@ -202,10 +215,12 @@
     min-width: 161px;
     min-height: 38px;
     margin-bottom: 53px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: @decktop-width) {
-    margin-bottom: 59px;
+    margin-bottom: 55px;
   }
 }
 

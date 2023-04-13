@@ -15,11 +15,13 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 54px;
-    padding: 0 70px;
+    margin-top: 34px;
+    padding: 0 69px;
   }
 
   @media (min-width: @decktop-width) {
     padding-left: 110px;
+    margin-bottom: 57px;
   }
 }
 
@@ -31,11 +33,12 @@
     padding: 0 70px;
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 66px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: @decktop-width) {
     padding-left: 110px;
+    margin-bottom: 67px;
   }
 }
 
@@ -54,7 +57,7 @@
 
 .form input,
 .form textarea {
-  padding: 13px 16px;
+  padding: 11px 15px 8px 15px;
   height: 45px;
   border: 1px solid @section-border;
 
@@ -69,7 +72,7 @@
 
   @media (min-width: @tablet-width) {
     height: 52px;
-    padding: 11px 19px;
+    padding: 11px 18px;
   }
 }
 
@@ -94,15 +97,15 @@
 .form__section {
   position: relative;
   border: none;
-  margin: 0 20px;
+  margin: 0 20px 25px 20px;
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    margin: 0 70px;
+    margin: 0 65px 75px 69px;
   }
 
   @media (min-width: @decktop-width) {
-    margin: 0 110px;
+    margin: 0 110px 78px 110px;
   }
 }
 
@@ -110,12 +113,12 @@
   .cat__data {
     display: flex;
     justify-content: space-between;
-    margin: 0 111px;
+    margin: 0 111px 62px 111px;
   }
 }
 
 .form__name {
-  padding-bottom: 24px;
+  padding-bottom: 27px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 72px;
@@ -123,7 +126,7 @@
   }
 
   @media (min-width: @decktop-width) {
-    flex-direction: column;
+    min-width: 570px;
     margin-right: 80px;
     flex-grow: 1;
     padding-bottom: 0;
@@ -133,23 +136,36 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: -4px;
   }
 
   & .form__input {
+    width: 172px;
     margin-left: 13px;
     flex-grow: 1;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 5px;
+      margin-left: 18px;
+      font-size: 20px;
+    }
+
+    @media (min-width: @decktop-width) {
+      margin-bottom: 7px;
+    }
   }
 }
 
 .form__programm {
   padding-top: 22px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   font-size: 16px;
   color: @catalog-black;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     border: 1px solid @section-border;
+    padding-bottom: 12px;
   }
 
   @media (min-width: @decktop-width) {
@@ -162,10 +178,11 @@
   position: relative;
   padding-left: 45px;
   display: block;
-  margin-bottom: 13px;
+  margin-bottom: 19px;
 
   @media (min-width: @tablet-width) {
     padding-left: 88px;
+    margin-bottom: 16px;
   }
 }
 
@@ -217,16 +234,22 @@
   }
 }
 
+.form__owner-data {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 58px;
+  }
+}
+
 .form__section__title {
   font-size: 24px;
   line-height: 26px;
-  padding: 26px;
-  padding-left: 0;
+  padding: 0 23px 35px 0;
   background-color: @basic_white;
 
   @media (min-width: @tablet-width) {
     margin-left: -40px;
-    padding: 71px 40px 76px 40px;
+    margin-bottom: 80px;
+    padding: 0 40px 0 40px;
     font-size: 36px;
     line-height: 36px;
     color: @basic_black;
@@ -246,14 +269,14 @@
   width: 100%;
   height: 2px;
   background-color: @basic_green;
-  top: -63px;
+  top: -71px;
   right: -20px;
   z-index: -1;
 
   @media (min-width: @tablet-width) {
-    top: -85px;
+    top: -93px;
     width: 123%;
-    right: -70px;
+    right: -65px;
   }
 
   @media (min-width: @decktop-width) {
@@ -273,7 +296,7 @@
     }
 
     & .form__label:first-child {
-      margin-right: 80px;
+      margin-right: 70px;
     }
   }
 
@@ -286,14 +309,29 @@
     & .form__input {
       margin-left: 10px;
       flex-grow: 1;
+
+      @media (min-width: @tablet-width) {
+        margin-left: 20px;
+        margin-bottom: 5px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  & .tel {
+    margin-top: -4px;
+    margin-left: -2px;
+
+    @media (min-width: @decktop-width) {
+      margin: 0;
     }
   }
 }
 
 .form__label__icon {
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 15px;
+  right: 15px;
 
   @media (min-width: @tablet-width) {
     top: 15px;
@@ -310,10 +348,10 @@
 
 .form__comment {
   &::before {
-    top: -37px;
+    top: -46px;
 
     @media (min-width: @tablet-width) {
-      top: -85px;
+      top: -94px;
     }
   }
 
@@ -323,17 +361,22 @@
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 16px;
     line-height: 18px;
-    padding: 9px 13px;
+    padding: 12px 13px;
 
     @media (min-width: @tablet-width) {
       height: 174px;
+      padding: 6px 18px;
+      font-size: 20px;
     }
   }
 }
 
 .form__extra {
+  margin-top: -3px;
+  margin-bottom: 26px;
+
   &::before {
-    top: -37px;
+    top: -45px;
   }
 
   & .wrapper {
@@ -344,17 +387,24 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
+    margin-top: -17px;
+    margin-bottom: 51px;
 
     &::before {
-      top: -85px;
+      top: -71px;
+    }
+
+    & .form__section__title {
+      margin-bottom: 57px;
     }
   }
 
   @media (min-width: @decktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 104px;
-    row-gap: 61px;
+    column-gap: 80px;
+    row-gap: 6px;
+    margin-bottom: 61px;
   }
 }
 
@@ -363,10 +413,19 @@
   padding: 7px;
   padding-left: 46px;
   display: block;
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 
   &:last-of-type {
-    margin-bottom: 34px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 59px;
+    margin-bottom: 27px;
+
+    &:last-of-type {
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -379,6 +438,11 @@
   outline-offset: -1px;
   left: 0;
   top: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form__extra__checkbox:checked + label::after {
@@ -391,13 +455,22 @@
   background-position: 50%, 50%;
   left: 6px;
   top: 10px;
-}
-
-.form__button-submit {
-  margin-bottom: 21px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 72px;
+    left: 12px;
+    top: 14px;
+  }
+}
+
+.form .form__button-submit {
+  font-size: 16px;
+  line-height: 20px;
+  height: 40px;
+  margin-bottom: 20px;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
   }
 
   @media (min-width: @decktop-width) {
@@ -411,9 +484,11 @@
   padding: 0;
   margin: 0;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 5px;
 
   @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
     text-align: left;
     padding-top: 18px;
   }

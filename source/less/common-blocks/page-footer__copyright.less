@@ -11,13 +11,19 @@
 }
 
 .copyright__link {
-  margin: 22px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 20px 0;
+
+  &:hover,
+  &:focus {
+    stroke: @basic_green;
+  }
 
   &:active {
     opacity: 0.3;
+    stroke: @basic_green;
   }
 
   @media (min-width: @decktop-width) {
@@ -28,6 +34,7 @@
 }
 
 .copyright__text {
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: @text_gray;
