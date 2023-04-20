@@ -18,4 +18,4 @@ becameButton.addEventListener('click', function(){
     slimImg.classList.remove('visually-hidden');
     rangeBecame.classList.remove('visually-hidden');
     rangeWas.classList.add('visually-hidden');
-})
+});

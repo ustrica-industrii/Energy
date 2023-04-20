@@ -4,7 +4,7 @@
   align-items: center;
 
   @media (min-width: @tablet-width) {
-    width: 70%;
+    flex-grow: 1;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -13,7 +13,7 @@
 .social__logo {
   width: 100%;
   text-align: center;
-  padding: 39px 0 32px 0;
+  padding: 34px 0 28px 0;
 
   &:hover img,
   &:focus img {
@@ -25,9 +25,14 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 128px;
     border: none;
     text-align: left;
+    padding: 0;
+    margin-right: 17%;
+  }
+
+  @media (min-width: @decktop-width) {
+    margin-right: 29%;
   }
 }
 
@@ -35,18 +40,25 @@
   width: 100%;
   min-height: 22px;
   list-style: none;
-  padding: 20px 0;
+  padding: 21px 0 20px 0;
   margin: 0;
   display: flex;
   justify-content: center;
 
   @media (min-width: @tablet-width) {
     border: none;
+    padding: 0;
+    min-height: 27px;
+    justify-content: flex-start;
   }
 }
 
 .social__item:not(:last-child) {
-  margin-right: 12%;
+  @media (max-width: @mobile-only-width) {
+    margin-right: 30px;
+  }
+
+  margin-right: 21px;
 }
 
 .social__link {
@@ -56,10 +68,30 @@
   justify-content: center;
   align-items: center;
 
+& .tablet-icon {
+  display: none;
+}
+
+  &:hover svg,
+  &:focus svg {
+    stroke: @basic_green;
+  }
+
+  &:active svg {
+    stroke: @basic_green;
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
-    & img {
-      width: 30px;
-      height: 22px;
+    width: 30px;
+    height: 22px;
+
+    & .tablet-icon {
+      display: block;
+    }
+
+    & .mobile-icon {
+      display: none;
     }
   }
 

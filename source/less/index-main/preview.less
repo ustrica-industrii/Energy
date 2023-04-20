@@ -7,9 +7,9 @@
   background-repeat: no-repeat;
   background-size:
     280px 270px,
-    100% 312px,
-    100% 312px;
-  background-position: 50% 84%, top, top;
+    100% 303px,
+    100% 303px;
+  background-position: 50% 80%, top, top;
   min-height: 480px;
   display: flex;
   flex-direction: column;
@@ -17,30 +17,47 @@
   align-items: center;
   margin-bottom: 22px;
 
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("./../img/index-can-mobile@2x.png"),
+      linear-gradient(to left, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%),
+      url("./../img/index-background-desktop@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     color: @basic_black;
     background-image: url("./../img/index-can-tablet.png");
     background-size: 709px 609px;
-    background-position: bottom;
+    background-position: center 235px;
     text-align: left;
     min-height: 810px;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-bottom: 33px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../img/index-can-tablet@2x.png");
+    }
   }
 
   @media (min-width: @decktop-width) {
+    height: 694px;
     position: relative;
-    top: -100px;
-    margin-bottom: -18px;
+    top: -113px;
+    margin-bottom: -30px;
     z-index: -1;
     background-image: url("./../img/index-can.png"), linear-gradient(to left, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("./../img/index-background-desktop1.jpg");
-    background-size: 430px 380px, 50% 694px, 50% 694px;
-    background-position: 58% 78%, right 0%, 100% 6%;
+    background-size: 552px 499px, 50% 694px, 50% 694px;
+    background-position: 63% 73%, right 0%, 100% 6%;
     align-items: flex-start;
     justify-content: center;
     min-height: 553px;
 
-    .preview__button {
+    @media (min-resolution: 2dppx) {
+      background-image: url("./../img/index-can@2x.png"), linear-gradient(to left, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("./../img/index-background-desktop1@2x.jpg");
+    }
+
+    & .preview__button {
       min-width: 244px;
       min-height: 54px;
     }
@@ -50,15 +67,19 @@
 @media (min-width: @tablet-width) {
   .preview__button {
     padding: 14px 26px;
-  }
-
-  .preview__header,
-  .preview__button {
-    margin-left: 83px;
+    margin-left: 82px;
   }
 
   .preview__header {
+    margin-left: 87px;
     margin-bottom: 49px;
+  }
+}
+
+@media (min-width: @decktop-width) {
+  .preview__header {
+    margin-left: 80px;
+    margin-bottom: 53px;
   }
 }
 
@@ -72,6 +93,8 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 41px;
+    padding-top: 33px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;

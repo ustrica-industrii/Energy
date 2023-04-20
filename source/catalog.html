@@ -4,12 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat energy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/fav/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/fav/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header page-header-index">
       <a class="page-header__logo" href="index.html">
-          <img class="logo" src="img/header-logo1.svg" alt="Cat energy" width="101" height="18">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52">
+          <img class="second-logo" src="img/header-logo1.svg" alt="Cat energy" width="101" height="18">
+        </picture>
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs page-header__nav">
         <button class="main-nav__toggle" type="button">
@@ -40,7 +49,13 @@
         <h1 class="catalog__title border">Каталог продукции</h1>
         <ul class="catalog__list">
           <li class="catalog__item product border">
-            <img class="product__image" src="img/catalog/chicken500.png" width="68" height="86" alt="cat energy pro вкус курица">
+            <picture>
+              <source type="image\webp" media="(min-width:768px)" srcset="img/catalog/chiken500-tablet.webp 1x, img/catalog/chiken500-tablet@2x.webp 2x">
+              <source type="image\webp" srcset="img/catalog/chiken500-mobile.webp 1x, img/catalog/chiken500-mobile@2x.webp 2x">
+
+              <source media="(min-width:768px)" srcset="img/catalog/chiken500-tablet.png 1x, img/catalog/chiken500-tablet@2x.png 2x">
+              <img class="product__image" src="img/catalog/chiken500-mobile.png" srcset="img/catalog/chiken500-mobile@2x.png 2x" width="68" height="86" alt="cat energy pro вкус курица">
+            </picture>
             <p class="product__title">Cat energy<br class="mobile-br"> pro<br class="tablet-br"> 500 Г</p>
             <dl class="product__characteristic characteristic">
               <div class="characteristic__item">
@@ -59,7 +74,13 @@
             <a class="product__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product border">
-            <img class="product__image" src="img/catalog/chichen1000.png" width="84" height="100" alt="cat energy pro вкус курица">
+            <picture>
+              <source type="image\webp" media="(min-width:768px)" srcset="img/catalog/chiken1000-tablet.webp 1x, img/catalog/chiken1000-tablet@2x.webp 2x">
+              <source type="image\webp" srcset="img/catalog/chiken1000-mobile.webp 1x, img/catalog/chiken1000-mobile@2x.webp 2x">
+
+              <source media="(min-width:768px)" srcset="img/catalog/chiken1000-tablet.png 1x, img/catalog/chiken1000-tablet@2x.png 2x">
+              <img class="product__image" src="img/catalog/chiken1000-mobile.png" srcset="img/catalog/chiken1000-mobile@2x.png 2x" width="84" height="100" alt="cat energy pro вкус курица">
+            </picture>
             <p class="product__title">Cat energy<br class="mobile-br"> pro<br class="tablet-br"> 1000 Г</p>
             <dl class="product__characteristic characteristic">
               <div class="characteristic__item">
@@ -78,7 +99,10 @@
             <a class="product__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product border">
-            <img class="product__image" src="img/catalog/fish500.png" width="68" height="86" alt="cat energy pro вкус рыба">
+            <picture>
+              <source media="(min-width:768px)" srcset="img/catalog/fish500-tablet.png 1x, img/catalog/fish500-tablet@2x.png 2x">
+              <img class="product__image" src="img/catalog/fish500-mobile.png" srcset="img/catalog/fish500-mobile@2x.png 2x" width="68" height="78" alt="cat energy pro вкус рыба">
+            </picture>
             <p class="product__title">Cat energy<br class="mobile-br"> pro<br class="tablet-br"> 500 Г</p>
             <dl class="product__characteristic characteristic">
               <div class="characteristic__item">
@@ -97,7 +121,10 @@
             <a class="product__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product border">
-            <img class="product__image" src="img/catalog/fish1000.png" width="84" height="100" alt="cat energy pro вкус рыба">
+            <picture>
+              <source media="(min-width:768px)" srcset="img/catalog/fish1000-tablet.png 1x, img/catalog/fish1000-tablet@2x.png 2x">
+              <img class="product__image" src="img/catalog/fish1000-mobile.png" srcset="img/catalog/fish1000-mobile@2x.png 2x" width="84" height="100" alt="cat energy pro вкус рыба">
+            </picture>
             <p class="product__title">Cat energy<br class="mobile-br"> pro<br class="tablet-br"> 1000 Г</p>
             <dl class="product__characteristic characteristic">
               <div class="characteristic__item">
@@ -116,7 +143,10 @@
             <a class="product__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product border">
-            <img class="product__image" src="img/catalog/buckwheat500.png"  width="68" height="86" alt="cat energy pro вкус гречка">
+            <picture>
+              <source media="(min-width:768px)" srcset="img/catalog/buckwheat500-tablet.png 1x, img/catalog/buckwheat500-tablet@2x.png 2x">
+              <img class="product__image" src="img/catalog/buckwheat500-mobile.png" srcset="img/catalog/buckwheat500-mobile@2x.png 2x" width="68" height="78" alt="cat energy pro вкус гречка">
+            </picture>
             <p class="product__title">Cat energy<br class="mobile-br"> slim<br class="tablet-br"> 500 Г</p>
             <dl class="product__characteristic characteristic">
               <div class="characteristic__item">
@@ -135,7 +165,10 @@
             <a class="product__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product border">
-            <img class="product__image" src="img/catalog/buckwheat1000.png" width="84" height="100" alt="cat energy pro вкус гречка">
+            <picture>
+              <source media="(min-width:768px)" srcset="img/catalog/buckwheat1000-tablet.png 1x, img/catalog/buckwheat1000-tablet@2x.png 2x">
+              <img class="product__image" src="img/catalog/buckwheat1000-mobile.png" srcset="img/catalog/buckwheat1000-mobile@2x.png 2x" width="84" height="100" alt="cat energy pro вкус гречка">
+            </picture>
             <p class="product__title">Cat energy<br class="mobile-br"> slim<br class="tablet-br"> 1000 Г</p>
             <dl class="product__characteristic characteristic">
               <div class="characteristic__item">
@@ -154,7 +187,10 @@
             <a class="product__button button" href="#">Заказать</a>
           </li>
           <li class="catalog__item product border">
-            <img class="product__image" src="img/catalog/rise500.png" width="68" height="86" alt="cat energy pro вкус рис">
+            <picture>
+              <source media="(min-width:768px)" srcset="img/catalog/rise500-tablet.png 1x, img/catalog/rise500-tablet@2x.png 2x">
+              <img class="product__image" src="img/catalog/rise500-mobile.png" srcset="img/catalog/rise500-mobile@2x.png 2x" width="72" height="84" alt="cat energy pro вкус рис">
+            </picture>
             <p class="product__title">Cat energy<br class="mobile-br"> slim<br class="tablet-br"> 500 Г</p>
             <dl class="product__characteristic characteristic">
               <div class="characteristic__item">
@@ -174,7 +210,7 @@
           </li>
           <li class="catalog__item catalog__product-all product border">
             <img src="img/catalog/plus.svg" alt="Показать ещё товары" width="30" height="30">
-            <p class="product__title">Показать еще<br class="tablet-br"> 10500 товаров</p>
+            <p class="product__title">Показать еще<br class="tablet-br"> 100500 товаров</p>
             <p class="catalog__product-all__text">На самом деле вкусов<br class="tablet-br"> гораздо больше!</p>
             <a  class="catalog__product-all__button button" href="#">Показать все</a>
           </li>
@@ -187,7 +223,7 @@
           <li class="extra-item extra-product border">
             <p class="extra-product__title">Сахарозаменитель</p>
             <dl class="extra-product__characteristic">
-              <dt class="extra-product__description">1 упаковка (100г)</dt>
+              <dt class="extra-product__description">1 упаковка (100 г)</dt>
               <dd class="extra-product__value">200 Р.</dd>
             </dl>
             <a class="extra-product__button button" href="#">Заказать</a>
@@ -243,35 +279,47 @@
       <div class="page-footer__container">
         <div class="page-footer__social social wrapper">
           <a class="social__logo border" href="#">
-          <img src="img/header-logo1.svg" alt="Car energy" width="128" height="24">
-        </a>
+           <img src="img/header-logo1.svg" alt="Cat energy" width="128" height="24">
+          </a>
         <ul class="social__list border">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <img src="img/logo_vk.svg" width="22" height="12" alt="Мы в Вконтакте">
+              <svg class="mobile-icon" width="23" height="16" fill="#666">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
+              <svg class="tablet-icon" width="30" height="22" fill="#666">
+                <use xlink:href="img/sprite.svg#icon-vk-tablet"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://instagram.com/htmlacademy">
-              <img src="img/logo-insta.svg" width="16" height="16" alt="Мы в Инстаграме">
+              <svg class="mobile-icon" width="16" height="16" fill="#666">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg>
+              <svg class="tablet-icon" width="23" height="23" fill="#666">
+                <use xlink:href="img/sprite.svg#icon-insta-tablet"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">
-              <img src="img/logo-facebook.svg" width="10" height="18" alt="Мы в Фейсбуке">
+              <svg class="mobile-icon" width="22" height="22" stroke="#666">
+                <use xlink:href="img/sprite.svg#icon-facebook" ></use>
+              </svg>
+              <svg class="tablet-icon" width="28" height="33" stroke="#666">
+                <use xlink:href="img/sprite.svg#icon-facebook-tablet"></use>
+              </svg>
             </a>
           </li>
         </ul>
         </div>
-        <div class="page-footer__copyright copyright  wrapper">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page-footer__copyright wrapper copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">HTML Academy</span>
-          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none"><path fill="#666" d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z"/><defs><clipPath id="a"><path fill="#fff" d="M0 0h27v34H0z"/></clipPath></defs></svg>
         </a>
-        </div>
       </div>
   </footer>
   <script src="js/nav.js"></script>
-  <script src="js/live-example.js"></script>
   </body>
 </html>
