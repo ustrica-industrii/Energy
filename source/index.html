@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat energy</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/fav/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/fav/180.png">
@@ -40,7 +40,6 @@
                 Подбор программы
               </a>
             </li>
-        </ul>
       </nav>
     </header>
     <main class="page-main">
@@ -77,7 +76,7 @@
           <h2 class="description__title">Как это работает</h2>
           <ul class="description__list">
             <li class="description__item">
-             <img class="description__item__icon" src="img/sheet-icon.svg" alt="" width="60" height="60">
+              <img class="description__item__icon" src="img/sheet-icon.svg" alt="" width="60" height="60">
               <p class="description__text">
                 Функциональное питание
                 содержит только полезные
@@ -105,7 +104,7 @@
       <section class="live-example">
         <div class="wrapper">
           <h2 class="live-example__title">Живой пример</h2>
-          <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой<br class="br-desktop"> обычный корм на Cat Energy Slim. Отличный результат<br class="br-desktop"> без изнуряющих тренировок! При этом он не менял своих<br class="br-desktop"> привычек и<br> по-прежнему спит по 16 часов в день. </p>
+          <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой&nbsp;<br class="br-desktop">обычный корм на Cat Energy Slim. Отличный результат&nbsp;<br class="br-desktop">без изнуряющих тренировок! При этом он не менял своих&nbsp;<br class="br-desktop">привычек и&nbsp;<br>по-прежнему спит по 16 часов в день. </p>
           <dl class="live-example__list">
             <div class="live-example__item">
               <dt class="live-example__number">5 кг</dt>
@@ -124,11 +123,19 @@
         <div class="live-example__slider">
           <div class="live-example__slider--top-wrapper">
             <picture>
+              <source type="image/webp" media="(min-width:1440px)" srcset="img/image_cat_desktop.webp 1x, img/image_cat_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/image_cat_tablet.webp 1x, img/image_cat_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/cat-before-mobile.webp 1x, img/cat-before-mobile@2x.webp 2x">
+
               <source media="(min-width: 1440px)" srcset="img/image_cat_desktop.png 1x, img/image_cat_desktop.png 2x">
               <source media="(min-width: 768px)" srcset="img/image_cat_tablet.png 1x, img/image_cat_tablet@2x.png 2x">
               <img class="live-example__cat-image fat__cat" src="img/cat-before-mobile.png" srcset="img/cat-before-mobile@2x.png 2x" alt="Толстый кот" width="311" height="232">
             </picture>
             <picture>
+              <source type="image/webp" media="(min-width:1440px)" srcset="img/image_cat_desktop.webp 1x, img/image_cat_desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width:768px)" srcset="img/image_cat_tablet.webp 1x, img/image_cat_tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/cat-after-mobile.webp 1x, img/cat-after-mobile@2x.webp 2x">
+
               <source media="(min-width: 1440px)" srcset="img/image_cat_desktop.png 1x, img/image_cat_desktop.png 2x">
               <source media="(min-width: 768px)" srcset="img/image_cat_tablet.png 1x, img/image_cat_tablet@2x.png 2x">
               <img class="live-example__cat-image slim__cat visually-hidden" src="img/cat-after-mobile.png" srcset="img/cat-after-mobile@2x.png 2x" alt="Худой кот" width="251" height="240">
@@ -166,7 +173,7 @@
         <div class="page-footer__container">
           <div class="page-footer__social social wrapper">
             <a class="social__logo border" href="#">
-             <img src="img/header-logo1.svg" alt="Cat energy" width="128" height="24">
+              <img src="img/header-logo1.svg" alt="Cat energy" width="128" height="24">
             </a>
           <ul class="social__list border">
             <li class="social__item">
@@ -207,7 +214,6 @@
           </a>
         </div>
     </footer>
-    <script src="js/nav.js"></script>
-    <script src="js/live-example.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
